@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сердеченко Іван</string>
+    <string name="no_save_profiles">Немає збережених профелів</string>
+    <string name="choose_at_least_1_lab">Треба вибрати хочаб одну роботу, зміни не внесено</string>
+    <string name="recreate_app_to_see_changes">Зміни внесено успішно, перезавантажте програму, щоб побачити зміни</string>
+    <string name="enter_profile_name">Введіть назву профілю</string>
+    <string name="save">Зберегти</string>
+    <string name="create_new_profile">Створити новий профіль</string>
+    <string name="clear_all_fields">Очистити усі поля</string>
+    <string name="remove">Видалити</string>
+    <string name="or">або</string>
+    <string name="equality">рівність</string>
+    <string name="is_more_accurate">є більш точною</string>
+    <string name="incorrect_input">Неправильній ввід, перевірте</string>
+    <string name="answer">Відповідь</string>
+    <string name="absolute_error">Абсолютна похибка</string>
+    <string name="relative_error">Відносна похибка</string>
+    <string name="task_description_5">Розв’язати нелінійне алгебраїчне рівняння f(x)=0 з точністю до 0.0001. Відокремлення коренів виконати аналітично. Уточнення коренів провести методом Ньютона (дотичних) та методом бісекції.</string>
+    <string name="formula">Формула</string>
+    <string name="empty_fields">Залишилися пусті поля, перевірте</string>
+    <string name="left_rect">За формулою лівих прямокутників</string>
+    <string name="right_rect">За формулою правих прямокутників</string>
+    <string name="middle_rect">За формулою середніх прямокутників</string>
+    <string name="direct_integration">Безпосереднє інтегрування</string>
+    <string name="simpson">За методом Сімпсона</string>
+    <string name="trapezoids">За методом трапецій</string>
+    <string name="open_parentheses">Залишилися не відкриті дужки, перевірте</string>
+    <string name="close_parentheses">Залишилися не закриті дужки, перевірте</string>
+    <string name="derivative">Похідна</string>
+    <string name="derivative_roots">Корні похідної</string>
+    <string name="newton">За методом Ньютона</string>
+    <string name="bisection">За методом бисекцій</string>
+    <string name="root_boundaries">Межі коренів</string>
+    <string name="cant_calc_by_newton">не може бути отриманий методом Ньютона</string>
+    <string name="no_roots">немає коренів</string>
+    <string name="enter_new_profile_name">Введи назву профіля</string>
+    <string name="ready">Готово</string>
+    <string name="download">Завантажити</string>
+    <string name="condition_1_1">1 завдання. Визначити, яка рівність точніша:</string>
+    <string name="enter">Ввести</string>
+    <string name="condition_1_2">2 завдання. Округлити сумнівні цифри числа, залишивши вірні знаки:</string>
+    <string name="radio1_2_1">А) у вузькому розумінні</string>
+    <string name="radio1_2_2">Б) у широкому розумінні</string>
+    <string name="condition_1_3">3 завдання. Знайти граничні абсолютні та відносні похибки чисел, якщо вони мають лише вірні цифри:</string>
+    <string name="condition_6_1">"З точністю до 0.0001 скласти розв’язок задачі Коші для звичайного диференційного рівняння першого порядку   на відрізку   з кроком h=0.1 за початкових умов  : "</string>
+    <string name="radio_6_1">А) методом Ейлера</string>
+    <string name="radio_6_2">Б) методом Ейлера-Коші</string>
+    <string name="starting_point">Початкова точка:</string>
+    <string name="interval">Інтервал:</string>
+    <string name="calculation_results">Результати обчислень:</string>
+    <string name="rgr_task_1_label">1 Завдання</string>
+    <string name="rgr_task_2_label">2 Завдання</string>
+    <string name="rgr_task_3_label">3 Завдання</string>
+    <string name="condition_rgr_1">З точністю до 0.0001 відбудувати функцію, що задана таблицею, у довільній точці х за допомогою інтерполяційних багаточленів Ньютона. За наявним набором значень побудувати графік інтерполяційної функції.</string>
+    <string name="condition_rgr_2" translatable="false">Використовуючи метод сіток, з точністю до 0.1 скласти наближений розв’язок задачі Діріхле для рівняння Лапласа <html><sup>∂²U</sup>/<sub>∂x²</sub> + <sup>∂²U</sup>/<sub>∂y²</sub></html> = 0 у квадраті АВСD з вершинами А(0, 0), B(0, 1), C(1, 1), D(1, 0) із заданими межовими умовами:</string>
+    <string name="step_h">"Крок h = "</string>
+    <string name="condition_rgr_3_1">Методом золотого перетину знайти</string>
+    <string name="least">найменше</string>
+    <string name="most">найбільше</string>
+    <string name="condition_rgr_3_2">"значення унімодальної функції "</string>
+    <string name="on_a_given_gap">"на заданому відрізку [ "</string>
+    <string name="to_the_nearest">з точністю до 0.01</string>
+</resources>

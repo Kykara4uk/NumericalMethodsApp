@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Serdechenko Ivan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="zero" translatable="false">⁰</string>
+    <string name="one" translatable="false">¹</string>
+    <string name="two" translatable="false">²</string>
+    <string name="three" translatable="false">³</string>
+    <string name="four" translatable="false">⁴</string>
+    <string name="five" translatable="false">⁵</string>
+    <string name="six" translatable="false">⁶</string>
+    <string name="seven" translatable="false">⁷</string>
+    <string name="eight" translatable="false">⁸</string>
+    <string name="nine" translatable="false">⁹</string>
+    <string name="zero_low" translatable="false">₀</string>
+    <string name="one_low" translatable="false">₁</string>
+    <string name="two_low" translatable="false">₂</string>
+    <string name="three_low" translatable="false">₃</string>
+    <string name="four_low" translatable="false">₄</string>
+    <string name="five_low" translatable="false">₅</string>
+    <string name="six_low" translatable="false">₆</string>
+    <string name="seven_low" translatable="false">₇</string>
+    <string name="eight_low" translatable="false">₈</string>
+    <string name="nine_low" translatable="false">₉</string>
+    <string name="no_save_profiles">No saved profiles</string>
+    <string name="choose_at_least_1_lab">You must select at least one job, no changes have been made</string>
+    <string name="recreate_app_to_see_changes">Changes made successfully, restart the program to see the changes</string>
+    <string name="enter_profile_name">Enter a profile name</string>
+    <string name="save">Save</string>
+    <string name="create_new_profile">Create a new profile</string>
+    <string name="clear_all_fields">Clear all fields</string>
+    <string name="remove">Remove</string>
+    <string name="or">or</string>
+    <string name="equality">equality</string>
+    <string name="is_more_accurate">is more accurate</string>
+    <string name="incorrect_input">Incorrect input, check</string>
+    <string name="answer">Answer</string>
+    <string name="absolute_error">Absolute error</string>
+    <string name="relative_error">Relative error</string>
+    <string name="task_description_5">Solve the nonlinear algebraic equation f (x) = 0 to the nearest 0.0001. Separation of roots to perform analytically. Specification of roots to carry out by Newton\'s method (tangential) and by bisection method:</string>
+    <string name="pow3" translatable="false">◻³</string>
+    <string name="pow4" translatable="false">◻⁴</string>
+    <string name="pow2" translatable="false">◻²</string>
+    <string name="pow" translatable="false">◻<html><sup>◻</sup></html></string>
+    <string name="formula">Formula</string>
+    <string name="empty_fields">There are empty fields left, check</string>
+    <string name="left_rect">By the formula of the left rectangles</string>
+    <string name="right_rect">By the formula of the right rectangles</string>
+    <string name="middle_rect">By the formula of the middle rectangles</string>
+    <string name="direct_integration">Direct integration</string>
+    <string name="simpson">By the method of Simpson</string>
+    <string name="trapezoids">By the method of trapezoids</string>
+    <string name="open_parentheses">There are no open parentheses, check</string>
+    <string name="close_parentheses">There are no closed parentheses, check</string>
+    <string name="derivative">Derivative</string>
+    <string name="derivative_roots">Derivative roots</string>
+    <string name="newton">By the method of Newton</string>
+    <string name="bisection">By bisection method</string>
+    <string name="root_boundaries">Root boundaries</string>
+    <string name="cant_calc_by_newton">cannot be obtained by Newton\'s method</string>
+    <string name="no_roots">no roots</string>
+    <string name="enter_new_profile_name">Enter new profile name</string>
+    <string name="ready">Ready</string>
+    <string name="download">Downolad</string>
+    <string name="condition_1_1">1 task. Determine which equation is more accurate:</string>
+    <string name="enter">Enter</string>
+    <string name="condition_1_2">2 task. Round the doubtful digits of the number, leaving the correct signs:</string>
+    <string name="radio1_2_1">A) in the narrow sense</string>
+    <string name="radio1_2_2">B) in a broad sense</string>
+    <string name="condition_1_3">3 task. Find the marginal absolute and relative errors of numbers if they have only correct digits:</string>
+    <string name="condition_6_1">To the nearest 0.0001, compose the solution of the Cauchy problem for the ordinary first-order differential equation on a segment with a step h = 0.1 under the initial conditions:</string>
+    <string name="radio_6_1">A) Euler method</string>
+    <string name="radio_6_2">B) Euler-Cauchy method</string>
+    <string name="starting_point">Starting point:</string>
+    <string name="interval">Interval:</string>
+    <string name="calculation_results">Calculation results:</string>
+    <string name="rgr_task_1_label">Task 1</string>
+    <string name="rgr_task_2_label">Task 2</string>
+    <string name="rgr_task_3_label">Task 3</string>
+    <string name="condition_rgr_1">To the nearest 0.0001, rebuild the function given by the table at an arbitrary point x using Newton\'s interpolation polynomials. According to the available set of values to construct a graph of the interpolation function.</string>
+    <string name="condition_rgr_2">Using the grid method, make an approximate solution of the Dirichlet problem for the Laplace equation <html><sup>∂²U</sup>/<sub>∂x²</sub> + <sup>∂²U</sup>/<sub>∂y²</sub></html> = 0 squared ABCD with vertices A(0, 0), B(0, 1), C(1, 1), D(1, 0) to the nearest 0.1. with the set boundary conditions:</string>
+    <string name="step_h">"Step h = "</string>
+    <string name="condition_rgr_3_1">Find the method of the golden ratio</string>
+    <string name="least">least</string>
+    <string name="most">most</string>
+    <string name="condition_rgr_3_2">the value of the unimodal function</string>
+    <string name="on_a_given_gap">"on a given gap [ "</string>
+    <string name="to_the_nearest">to the nearest 0.01</string>
+</resources>

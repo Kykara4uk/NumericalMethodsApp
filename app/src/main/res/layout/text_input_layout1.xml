@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout style="@style/edit_layout"
+    android:layout_marginStart="5sp"
+    android:layout_marginEnd="5sp"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="wrap_content"
+    app:hintEnabled="false"
+    app:expandedHintEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+
+        android:hint="Введіть вираз"
+        app:met_floatingLabel="normal" />
+</com.google.android.material.textfield.TextInputLayout>

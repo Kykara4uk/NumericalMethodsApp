@@ -1,0 +1,4213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/set_1_1"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+        </KeyFrameSet>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/set_2_1"
+        motion:constraintSetStart="@id/set_1_2"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/set_1_2"
+        motion:constraintSetStart="@id/set_1_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/set_2_1"
+        motion:constraintSetStart="@id/set_1_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/set_3_1"
+        motion:constraintSetStart="@id/set_1_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/set_3_1"
+        motion:constraintSetStart="@id/set_2_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/set_3_2"
+        motion:constraintSetStart="@id/set_3_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <Transition
+        motion:constraintSetEnd="@+id/set_2_2"
+        motion:constraintSetStart="@id/set_2_1"
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/textViewTask1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:alpha="-1"
+            app:visibilityMode="ignore"
+
+            >
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            android:alpha="-1" app:visibilityMode="ignore"
+
+            >
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore"
+
+            >
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/button1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            app:visibilityMode="ignore"
+            android:alpha="-1" >
+            <PropertySet
+                app:applyMotionScene="false"
+                 />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/button2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_1_1" >
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            app:visibilityMode="ignore"
+
+            android:alpha="0" >
+            <PropertySet
+                app:applyMotionScene="false"
+                 />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+
+           android:alpha="0"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+
+            android:translationZ="-4dp"
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="0"
+            android:translationZ="-4dp"
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+
+
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="0"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="0"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="0"
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_1_2"
+        >
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+
+            android:translationZ="-4dp"
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1"
+            android:translationZ="-4dp"
+
+
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="1"
+
+
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="1"
+
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/cardGraph"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+
+
+            android:translationZ="-4dp"
+            android:alpha="0"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="0"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="0"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_2_1" >
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+
+            app:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            app:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+            app:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            app:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            app:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_2_3" >
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+
+            app:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            app:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+            app:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            app:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            app:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            app:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:alpha="-1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="-1"
+            app:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_2_2" >
+
+        <Constraint
+            android:id="@+id/textViewTask1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+            android:translationZ="-4dp"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            android:translationZ="-4dp"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="1"
+
+            android:layout_marginTop="5dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2Answer"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_3_1" >
+
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore"
+            android:alpha="-1" >
+            <PropertySet
+                app:applyMotionScene="false"
+                 />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_3_3" >
+
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+            motion:layout_constraintStart_toStartOf="parent"
+
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+            app:visibilityMode="ignore"
+            android:alpha="-1" >
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+
+            android:translationZ="-4dp"
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="-1"
+
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/set_3_2" >
+        <Constraint
+            android:id="@+id/textViewTask1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Condition"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearButtonsOfTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask1Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/linearTableMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearButtonsOfTable"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/horizontalTableOfX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linearTableMain2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/buttonsOfX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/horizontalTableOfX"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@+id/buttonsOfX"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask1Answer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/buttonsOfX"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/cardGraph"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1Answer"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask1"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textViewTask2Condition"
+            android:layout_marginTop="5dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask2Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_2"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_2"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask2Condition2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/tableTask2"
+            android:layout_marginStart="10dp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout1"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+            android:translationZ="-4dp"
+
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/tableTask2Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/edit_text_layout_2"
+            android:alpha="-1"
+            android:translationZ="-4dp"
+
+            android:layout_marginTop="5dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/textViewTask3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/spinner_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Condition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3fx"
+            android:layout_width="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3"
+            android:layout_height="wrap_content"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3fx"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3"
+            android:layout_marginStart="10dp"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintBottom_toBottomOf="@id/edit_text_layout_3_gap_1"
+            motion:layout_constraintTop_toTopOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_1"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap2"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/edit_text_layout_3_gap_2"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Gap3"
+            motion:layout_constraintStart_toEndOf="@id/edit_text_layout_3_gap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Accuracy"
+            motion:layout_constraintStart_toEndOf="@id/textViewTask3Gap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBaseline_toBaselineOf="@id/edit_text_layout_3_gap_1"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/flow_3_gap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/edit_text_layout_3"
+
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/keyboardLayout2"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/flow_3_gap"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10sp"
+
+            android:translationZ="-4dp"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/textViewTask3Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/flow_3_gap"
+            android:alpha="1"
+            android:layout_marginBottom="10dp"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+        <Constraint
+            android:id="@+id/button3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/keyboardLayout2"
+
+            android:translationZ="-4dp"
+            android:alpha="-1"
+            app:visibilityMode="ignore">
+            <PropertySet
+                app:applyMotionScene="false"
+                />
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

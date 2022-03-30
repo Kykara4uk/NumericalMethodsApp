@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244924807122",
+    "project_id": "metod-ca1d9",
+    "storage_bucket": "metod-ca1d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244924807122:android:bc788f4d1b1d3413fc7a0b",
+        "android_client_info": {
+          "package_name": "com.kykara4a.metod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244924807122-ku0hlmnv9o1h9bsa9ou1o5e1jj2a3gvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUTtg7u4Yoylf9NuQkRb-6ofd5mslwaXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244924807122-ku0hlmnv9o1h9bsa9ou1o5e1jj2a3gvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+    <style name="edit_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#1C9310</item>
+        <item name="hintTextColor">#1C9310</item>
+    </style>
+    <style name="edit_layout_small" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#1C9310</item>
+        <item name="hintTextColor">#1C9310</item>
+
+
+        <item name="contentPaddingLeft">2dp</item>
+        <item name="paddingBottomNoButtons">20dp</item>
+    </style>
+    <style name="edit_layout_small_spinner" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="boxStrokeColor">#1C9310</item>
+        <item name="hintTextColor">#1C9310</item>
+
+
+        <item name="contentPaddingLeft">2dp</item>
+        <item name="paddingBottomNoButtons">20dp</item>
+    </style>
+    <style name="edit_layout_row" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">#1C9310</item>
+        <item name="hintTextColor">#1C9310</item>
+    </style>
+    <style name="myDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+        <item name="cornerFamily">rounded</item>
+
+    </style>
+    <style name="myPopup" parent="Theme.AppCompat.DayNight">
+        <item name="cornerRadius">20dp</item>
+
+    </style>
+    <style name="ButtonKeyboard" parent="Widget.MaterialComponents.Button">
+
+<item name="android:textColor">@color/materialButton</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:layout_marginStart">7sp</item>
+        <item name="android:layout_marginEnd">7sp</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+    <style name="ButtonLeft" parent="Widget.MaterialComponents.Button">
+
+
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeTopRight">0%</item>
+        <item name="cornerSizeBottomRight">0%</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+    <style name="table" parent="Widget.MaterialComponents.Button">
+
+
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="ButtonRight" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerSizeTopLeft">0%</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="cornerSizeBottomLeft">0%</item>
+    </style>
+    <style name="textViewN" parent="Widget.MaterialComponents.TextView">
+        <item name="cornerSizeTopLeft">0%</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeBottomRight">50%</item>
+        <item name="cornerSizeBottomLeft">0%</item>
+    </style>
+</resources>

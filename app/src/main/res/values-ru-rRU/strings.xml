@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сердеченко Иван</string>
+    <string name="no_save_profiles">Нет сохраненных профилей</string>
+    <string name="choose_at_least_1_lab">Нужно выбрать хотя бы одну работу, изменения не сохранены</string>
+    <string name="recreate_app_to_see_changes">Изменения успешно сохранены, перезапустите программу, чтоб увидеть изменения</string>
+    <string name="enter_profile_name">Введите название профиля</string>
+    <string name="save">Сохранить</string>
+    <string name="create_new_profile">Создать новый профиль</string>
+    <string name="clear_all_fields">Очистить все поля</string>
+    <string name="remove">Удалить</string>
+    <string name="or">или</string>
+    <string name="equality">равенство</string>
+    <string name="is_more_accurate">является более точным</string>
+    <string name="incorrect_input">Неправильный ввод, проверьте</string>
+    <string name="answer">Ответ</string>
+    <string name="absolute_error">Абсолютная ошибка</string>
+    <string name="relative_error">Относительна ошибка</string>
+    <string name="task_description_5">Решить нелинейное алгебраическое уравнение f (x) = 0 с точностью до 0.0001. Отделение корней выполнить аналитически. Уточнение корней провести методом Ньютона (касательных) и методом биссекции:</string>
+    <string name="formula">Формула</string>
+    <string name="empty_fields">Остались пустые поля, проверьте</string>
+    <string name="left_rect">По формуле левых прямоугольников</string>
+    <string name="right_rect">По формуле правых прямоугольников</string>
+    <string name="middle_rect">По формуле средних прямоугольников</string>
+    <string name="direct_integration">Непосредственное интегрирование</string>
+    <string name="simpson">По методу Симпсона</string>
+    <string name="trapezoids">По методу трапеций</string>
+    <string name="open_parentheses">Остались открытые скобки, проверьте</string>
+    <string name="close_parentheses">Остались закрыты скобки, проверьте</string>
+    <string name="derivative">Производная</string>
+    <string name="derivative_roots">Корни производной</string>
+    <string name="newton">По методу Ньютона</string>
+    <string name="bisection">По методу бисекций</string>
+    <string name="root_boundaries">Границы корней</string>
+    <string name="cant_calc_by_newton">не может быть получено методом Ньютона</string>
+    <string name="no_roots">нет корней</string>
+    <string name="enter_new_profile_name">Введи название профиля</string>
+    <string name="ready">Готово</string>
+    <string name="download">Загрузить</string>
+    <string name="condition_1_1">1 задание. Определить, какое равенство точнее:</string>
+    <string name="enter">Ввести</string>
+    <string name="condition_1_2">2 задание. Округлить сомнительные цифры числа, оставив верные знаки:</string>
+    <string name="radio1_2_1">А) в узком смысле</string>
+    <string name="radio1_2_2">Б) в широком смысле</string>
+    <string name="condition_1_3">3 задание. Найти предельные абсолютные и относительные погрешности чисел, если они имеют только верные цифры:</string>
+    <string name="condition_6_1">С точностью до 0.0001 составить решение задачи Коши для обыкновенного дифференциального уравнения первого порядка на отрезке с шагом h = 0.1 при начальных условиях:</string>
+    <string name="radio_6_1">А) методом Эйлера</string>
+    <string name="radio_6_2">Б) методом Эйлера-Коши</string>
+    <string name="starting_point">Начальная точка:</string>
+    <string name="interval">Интервал:</string>
+    <string name="calculation_results">Результаты вычислений:</string>
+    <string name="rgr_task_1_label">1 Задание</string>
+    <string name="rgr_task_2_label">2 Задание</string>
+    <string name="rgr_task_3_label">3 Задание</string>
+    <string name="condition_rgr_1">С точностью до 0.0001 восстановить функцию, которая задана таблицей, в произвольной точке х с помощью интерполяционных многочленов Ньютона. По имеющимся набором значений построить график интерполяционной функции.</string>
+    <string name="condition_rgr_2" translatable="false">Используя метод сеток, с точностью до 0.1 составить приближенное решение задачи Дирихле для уравнения Лапласа <html><sup>∂²U</sup>/<sub>∂x²</sub> + <sup>∂²U</sup>/<sub>∂y²</sub></html> = 0 в квадрате АВСD с вершинами А(0, 0), B(0, 1), C(1, 1), D(1, 0) с заданными граничными условиями:</string>
+    <string name="step_h">"Шаг h = "</string>
+    <string name="condition_rgr_3_1">Методом золотого сечения найти</string>
+    <string name="least">наименьшее</string>
+    <string name="most">наибольшее</string>
+    <string name="condition_rgr_3_2">значение унимодальной функции</string>
+    <string name="on_a_given_gap">"на заданном отрезке [ "</string>
+    <string name="to_the_nearest">с точностью до 0.01</string>
+</resources>

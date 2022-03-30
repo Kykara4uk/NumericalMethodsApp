@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <PreferenceCategory
+        android:title="Зовнішний вигляд">
+
+
+    <androidx.preference.ListPreference
+        android:key="list_day_night"
+        android:icon="@drawable/ic_baseline_brightness_4_24"
+        android:title="Темна тема"
+        android:summary="Вибери яку тему хочеш використовувати"
+        android:defaultValue="2"
+        android:dialogTitle="Тема"
+        android:entries="@array/nightModes"
+        android:entryValues="@array/nightModes2" />
+        <com.kykara4a.metod.myMultiSelectListPreference
+            android:title="Лабораторні роботи"
+            android:summary="Вибери які роботи хочеш бачити (вимагає перезавантаження програми)"
+            android:key="list_labs"
+            android:defaultValue="@array/labs2"
+            android:entries="@array/labs"
+android:icon="@drawable/ic_baseline_table_chart_24"
+            android:entryValues="@array/labs2"/>
+        <androidx.preference.ListPreference
+            android:key="language"
+            android:icon="@drawable/ic_baseline_language_24"
+            android:title="Мова"
+            android:summary="Вибери бажану мову інтерфейсу (у розробці)"
+            android:defaultValue="en"
+            android:dialogTitle="Мова"
+            android:entries="@array/language"
+            android:entryValues="@array/language2" />
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

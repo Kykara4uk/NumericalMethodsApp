@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nightModes">
+        <item>Світла тема</item>
+        <item>Темна тема</item>
+        <item>В залежності від теми системи</item>
+        <item>В залежності від рівня заряду</item>
+    </string-array>
+
+    <string-array name="nightModes2">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="labs">
+        <item>Перша</item>
+        <item>Друга</item>
+        <item>Третя</item>
+        <item>Четверта</item>
+        <item>П\'ята</item>
+        <item>Шоста</item>
+        <item>РГР</item>
+    </string-array>
+    <string-array name="labs2">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="language">
+        <item>English</item>
+        <item>Ukrainian</item>
+        <item>Russian</item>
+    </string-array>
+    <string-array name="language2">
+        <item>en</item>
+        <item>ua</item>
+        <item>ru</item>
+    </string-array>
+    <string-array name="labfour1">
+        <item>x</item>
+        <item>x²</item>
+    </string-array>
+    <string-array name="cos_sin">
+        <item>sin</item>
+        <item>cos</item>
+    </string-array>
+    <string-array name="rgr_3">
+        <item>@string/least</item>
+        <item>@string/most</item>
+    </string-array>
+    <string-array name="labfour2">
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+</resources>

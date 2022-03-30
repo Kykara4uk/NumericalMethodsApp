@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Побудувати інтерполяційний багаточлен Лагранжа для функції, що задана таблицею:" />
+            <HorizontalScrollView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="5dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_width="match_parent"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:contentPadding="2dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:animateLayoutChanges="true"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="8dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/linearDescNames"
+                    android:animateLayoutChanges="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                            android:id="@+id/layoutX"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grey">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="x"
+                                android:background="@color/white"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutY"
+                            android:background="@color/grey"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="f(x)"
+                                android:background="@color/white"
+                                android:layout_width="50dp"
+                                android:layout_marginEnd="1dp"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonMinus"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/ButtonLeft"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/textViewN"
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_background"
+                    android:text="n=3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonPlus"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/ButtonRight"
+                    android:text="+" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Та з точністю до 0.001 обчислити наближені значення функції у заданих точках: " />
+
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="5dp"
+                    android:animateLayoutChanges="true"
+                    android:layout_width="match_parent"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:contentPadding="2dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:animateLayoutChanges="true"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="8dp"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutX2"
+                        android:orientation="horizontal"
+                        android:animateLayoutChanges="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="x"
+                            android:background="@color/white"
+                            android:layout_marginEnd="1dp"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonMinus2"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/ButtonLeft"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/textViewN2"
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/textViewN"
+                    android:background="@drawable/text_background"
+                    android:text="i=4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonPlus2"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/ButtonRight"
+                    android:text="+" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Побудувати графік інтерполяційної функції y=L(x) за наявним набором точок." />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Ввести" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linearOutput"/>
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="8dp"
+                android:id="@+id/cardview"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/grey"
+                app:contentPadding="1dp"
+                android:layout_height="400dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/graph_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="8dp">
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:transitionName="profile"
+                    android:layout_height="match_parent"
+                    android:id="@+id/graph" />
+            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

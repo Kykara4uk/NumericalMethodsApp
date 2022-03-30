@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008000</color>
+    <color name="colorPrimaryDark">#065700</color>
+    <color name="colorAccent">#039823</color>
+    <color name="colorMain">#008000</color>
+    <color name="colorYellow">#FFF31A</color>
+    <color name="tabSelected">#013E01</color>
+    <color name="tabUnSelected">#000000</color>
+    <color name="black">#000000</color>
+    <color name="stroke">#4C4B4B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="background">#FFFFFF</color>
+    <color name="background2">#BDF1BF</color>
+    <color name="background3">#FFFFFF</color>
+    <color name="materialButton">#FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#878787</color>
+</resources>

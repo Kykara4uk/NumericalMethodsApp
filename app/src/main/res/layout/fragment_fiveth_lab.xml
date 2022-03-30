@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/motionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+
+                android:animateLayoutChanges="true"
+                app:layoutDescription="@xml/fragment_fiveth_lab_xml_linearlayout_scene">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/task_description_5"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    style="@style/edit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    app:layout_constraintTop_toBottomOf="@id/textView8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="2"
+
+                        android:gravity="start"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:met_floatingLabel="normal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView5_2"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toBottomOf="@id/textInputLayout" />
+                <androidx.cardview.widget.CardView
+                    android:alpha="0"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/cardview"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/grey"
+                    app:contentPadding="1dp"
+
+                    app:layout_constraintTop_toBottomOf="@id/textView5_2"
+                    android:layout_height="400dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/graph_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        app:cardCornerRadius="8dp">
+                        <com.jjoe64.graphview.GraphView
+                            android:layout_width="match_parent"
+                            android:transitionName="profile"
+                            android:layout_height="match_parent"
+                            android:clickable="false"
+                            android:id="@+id/graph" />
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/keyboardLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/button1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton2"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="◄" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton3"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="►" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton0"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            app:icon="@drawable/ic_outline_backspace_24"
+                            app:iconGravity="textStart"
+                            app:iconPadding="0dp"
+                            app:iconTint="@color/materialButton" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton15"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="@string/pow4" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton11"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="@string/pow3" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton7"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="@string/pow2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton4"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="7" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton5"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="8" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton6"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="9" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton8"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="4"
+
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton9"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="5" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton10"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="6" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton12"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton13"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton14"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="3" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton16"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="x" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton17"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="0" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton1"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="." />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton18"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="-" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton19"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="+" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/keyboardButton20"
+                            style="@style/ButtonKeyboard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:minWidth="0dp"
+                            android:text="=" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ввести"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@id/keyboardLayout1"
+
+                    />
+
+
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
